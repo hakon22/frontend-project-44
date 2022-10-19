@@ -36,6 +36,7 @@ export default () => {
     } else {
       console.log(`'${result}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
       console.log(`Let's try again, ${userName}!`);
+      break;
     }
   }
 };
