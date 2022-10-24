@@ -8,7 +8,7 @@ setup.rules = 'Answer "yes" if given number is prime. Otherwise answer "no".'; /
 export const prime = () => {
   setup.correctAnswer = 0;
   const number = Math.floor(2 + Math.random() * 100); // генерируем случайное число от 2 до 100
-  for (let i = 2; i < Math.sqrt(number); i += 1) {
+  for (let i = 2; i <= Math.sqrt(number); i += 1) {
     if (number === 2) {
       setup.correctAnswer = response1; // добавляем верный ответ в переменную
       break;
